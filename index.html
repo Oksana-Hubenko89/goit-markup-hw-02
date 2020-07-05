@@ -36,16 +36,18 @@
           </ul>
         </nav>
         <ul class="list auth-nav">
-          <li class="item">
+          <li class="item">           
             <a class="link auth-nav contact" href="mailto:info@devstudio.com" 
-              ><img src="./image/envelope(hover).svg" alt="иконка конверта" />
+              ><svg class="icon-contact">
+              <use  href="./image/sprite.svg#envelope"></use></svg>
               info@devstudio.com</a
             >
           </li>
-          <li class="item">
+          <li class="item">            
             <a class="link auth-nav contact" href="tell:+380961111111" 
-              ><img src="./image/smartphone.svg" alt="иконка телефона" />+38 096
-              111 11 11</a
+              ><svg class="icon-contact-phone">
+                <use href="./image/sprite.svg#smartphone"></use></svg>
+                +38 096 111 11 11</a
             >
           </li>
         </ul>
@@ -57,7 +59,7 @@
       <div class="container hero-fone">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
           <a class="link" href=""
-            ><button type="button" class="button-primary">
+            ><button type="button" class="button-primary buttom-header">
               Заказать услугу
             </button>
           </a>
@@ -70,46 +72,47 @@
           <h2 class="invisible">Невидимый заголовок</h2>
           <ul class="list flex-container">
             <li class="item">
-              <a class="link" href=""
-                ><div class="icon">
-                  <img src="./image/antenna.svg" alt="иконка антенны" />
-                </div>
+              
+                <div class="icon"><svg class="icon-start">
+                  <use href="./image/sprite.svg#antenna"></use>
+                </svg></div>
 
                 <h3 class="hero-three else-color-hero">Внимание к деталям</h3>
                 <p class="text-p">
                   Идейные соображения, а также начало повседневной работы по
                   формированию позиции.
-                </p></a
-              >
+                </p>
             </li>
             <li class="item">
-              <a class="link" href=""
-                ><div class="icon">
-                  <img src="./image/clock.svg" alt="иконка будильника" />
+              
+                <div class="icon">
+                  <svg class="icon-start">
+                    <use href="./image/sprite.svg#clock"></use>
+                  </svg>
                 </div>
                 <h3 class="hero-three else-color-hero">Пунктуальность</h3>
                 <p class="text-p">
                   Задача организации, в особенности же рамки и место обучения
                   кадров влечет за собой.
-                </p></a
-              >
+                </p>
             </li>
             <li class="item">
-              <a class="link" href=""
-                ><div class="icon">
-                  <img src="./image/diagram.svg" alt="иконка диаграммы" />
+              <div class="icon">
+                  <svg class="icon-start">
+                    <use href="./image/sprite.svg#diagram"></use>
+                  </svg>
                 </div>
                 <h3 class="hero-three else-color-hero">Планирование</h3>
                 <p class="text-p">
                   Равным образом консультация с широким активом в значительной
                   степени обуславливает.
-                </p></a
-              >
+                </p>
             </li>
             <li class="item">
-              <a class="link" href=""
-                ><div class="icon">
-                  <img src="./image/astronaut.svg" alt="иконка астронавта" />
+              <div class="icon">
+                <svg class="icon-start">
+                  <use href="./image/sprite.svg#astronaut"></use>
+                </svg>
                 </div>
                 <h3 class="hero-three else-color-hero">
                   Современные технологии
@@ -117,8 +120,7 @@
                 <p class="text-p">
                   Значимость этих проблем настолько очевидна, что реализация
                   плановых заданий.
-                </p></a
-              >
+                </p>
             </li>
           </ul>
         </div>
@@ -129,31 +131,25 @@
 
           <ul class="list flex-container">
             <li class="item primory-fone">
-              <a class="link" href=""
-                ><img src="./image/ноут.jpg" alt="изображения ноутбука" />
+              <img src="./image/ноут.jpg" alt="изображения ноутбука" />
                 <h3 class="hero-three hero-three-else">
                   Десктопные приложения
-                </h3></a
-              >
+                </h3>
             </li>
             <li class="item primory-fone">
-              <a class="link" href=""
-                ><img
+             <img
                   src="./image/телефон.jpg"
                   alt="изображения мобильного телефона"
                 />
                 <h3 class="hero-three hero-three-else">
                   Мобильные приложения
-                </h3></a
-              >
+                </h3>
             </li>
             <li class="item ">
-              <a class="link" href=""
-                ><img src="./image/монитор.png" alt="изображения монитора" />
+              <img src="./image/монитор.jpg" alt="изображения монитора" />
                 <h3 class="hero-three hero-three-else primory-fone">
                   Дизайнерские решения
-                </h3></a
-              >
+                </h3>
             </li>
           </ul>
         </div>
@@ -175,40 +171,44 @@
                   <h3 class="name name-color">Николай Кучеренко</h3>
                   <p lang="en" class="profesion">Product Designer</p>
                 <ul class="list flex-container social-icon">
-                  <li>
-                    <a
-                      class=" social-link"
-                      href=""
-                      aria-label="ссылка на Instagram"
-                      
-                      >Instagram</a
+                  <li class="item-social">
+                  <a href="" class=" social-link" aria-label="ссылка на Instagram">
+                    <svg class="icon-social">
+                      <use href="./image/sprite.svg#instagram"></use>
+                      </svg></a
                     >
                   </li>
-                  <li>
+                  <li class="item-social">
                     <a
                       class="link social-link"
                       href=""
                       aria-label="ссылка на Twitter"
                       
-                      >Twitter</a
+                      ><svg class="icon-social">
+                        <use href="./image/sprite.svg#twitter"></use>
+                      </svg></a
                     >
                   </li>
-                  <li>
+                  <li class="item-social">
                     <a
                       class="link social-link"
                       href=""
                       aria-label="ссылка на Facebook"
                       
-                      >Facebook</a
+                      ><svg class="icon-social">
+                        <use href="./image/sprite.svg#facebook"></use>
+                      </svg></a
                     >
                   </li>
-                  <li>
+                  <li class="item-social">
                     <a
                       class="link social-link"
                       href=""
                       aria-label="ссылка на IN"
                      
-                      >IN</a
+                      ><svg class="icon-social">
+                      <use href="./image/sprite.svg#linkedin"></use>
+                      </svg></a
                     >
                   </li>
                 </ul>
@@ -228,41 +228,26 @@
                 <h3 class="name name-color">Ольга Иванова</h3>
                 <p lang="en" class="name profesion">Frontend Developer</p>
               <ul class="list flex-container social-icon">
-                <li>
-                  <a
-                    class="link social-link"
-                    href=""
-                    aria-label="ссылка на Instagram"
-                    
-                    >Instagram</a
-                  >
+                <li class="item-social">
+                  <a href="" class=" social-link" aria-label="ссылка на Instagram">
+                    <svg class="icon-social">
+                      <use href="./image/sprite.svg#instagram"></use>
+                    </svg></a>
                 </li>
-                <li>
-                  <a
-                    class="link social-link"
-                    href=""
-                    aria-label="ссылка на Twitter"
-                    
-                    >Twitter</a
-                  >
+                <li class="item-social">
+                  <a class="link social-link" href="" aria-label="ссылка на Twitter"><svg class="icon-social">
+                      <use href="./image/sprite.svg#twitter"></use>
+                    </svg></a>
                 </li>
-                <li>
-                  <a
-                    class="link social-link"
-                    href=""
-                    aria-label="ссылка на Facebook"
-                    
-                    >Facebook</a
-                  >
+                <li class="item-social">
+                  <a class="link social-link" href="" aria-label="ссылка на Facebook"><svg class="icon-social">
+                      <use href="./image/sprite.svg#facebook"></use>
+                    </svg></a>
                 </li>
-                <li>
-                  <a
-                    class="link social-link"
-                    href=""
-                    aria-label="ссылка на IN"
-                    
-                    >IN</a
-                  >
+                <li class="item-social">
+                  <a class="link social-link" href="" aria-label="ссылка на IN"><svg class="icon-social">
+                      <use href="./image/sprite.svg#linkedin"></use>
+                    </svg></a>
                 </li>
               
               </ul>
@@ -282,41 +267,26 @@
                 <h3 class="name name-color">Андрей Шевченко</h3>
                 <p lang="en" class="name profesion">Marketing</p>
               <ul class="list flex-container social-icon">
-                <li>
-                  <a
-                    class="link social-link"
-                    href=""
-                    aria-label="ссылка на Instagram"
-                    
-                    >Instagram</a
-                  >
+                <li class="item-social">
+                  <a href="" class=" social-link" aria-label="ссылка на Instagram">
+                    <svg class="icon-social">
+                      <use href="./image/sprite.svg#instagram"></use>
+                    </svg></a>
                 </li>
-                <li>
-                  <a
-                    class="link social-link"
-                    href=""
-                    aria-label="ссылка на Twitter"
-                    
-                    >Twitter</a
-                  >
+                <li class="item-social">
+                  <a class="link social-link" href="" aria-label="ссылка на Twitter"><svg class="icon-social">
+                      <use href="./image/sprite.svg#twitter"></use>
+                    </svg></a>
                 </li>
-                <li>
-                  <a
-                    class="link social-link"
-                    href=""
-                    aria-label="ссылка на Facebook"
-                    
-                    >Facebook</a
-                  >
+                <li class="item-social">
+                  <a class="link social-link" href="" aria-label="ссылка на Facebook"><svg class="icon-social">
+                      <use href="./image/sprite.svg#facebook"></use>
+                    </svg></a>
                 </li>
-                <li>
-                  <a
-                    class="link social-link"
-                    href=""
-                    aria-label="ссылка на IN"
-                    
-                    >IN</a
-                  >
+                <li class="item-social">
+                  <a class="link social-link" href="" aria-label="ссылка на IN"><svg class="icon-social">
+                      <use href="./image/sprite.svg#linkedin"></use>
+                    </svg></a>
                 </li>
               </ul>
               </div>
@@ -335,41 +305,26 @@
                 <p lang="en" class="name profesion">UI Designer</p>
               <ul class="list flex-container social-icon">
                
-                <li>
-                  <a
-                    class="link social-link"
-                    href=""
-                    aria-label="ссылка на Instagram"
-                    
-                    >Instagram</a
-                  >
+                <li class="item-social">
+                  <a href="" class=" social-link" aria-label="ссылка на Instagram">
+                    <svg class="icon-social">
+                      <use href="./image/sprite.svg#instagram"></use>
+                    </svg></a>
                 </li>
-                <li>
-                  <a
-                    class="link social-link"
-                    href=""
-                    aria-label="ссылка на Twitter"
-                    
-                    >Twitter</a
-                  >
+                <li class="item-social">
+                  <a class="link social-link" href="" aria-label="ссылка на Twitter"><svg class="icon-social">
+                      <use href="./image/sprite.svg#twitter"></use>
+                    </svg></a>
                 </li>
-                <li>
-                  <a
-                    class="link social-link"
-                    href=""
-                    aria-label="ссылка на Facebook"
-                    
-                    >Facebook</a
-                  >
+                <li class="item-social">
+                  <a class="link social-link" href="" aria-label="ссылка на Facebook"><svg class="icon-social">
+                      <use href="./image/sprite.svg#facebook"></use>
+                    </svg></a>
                 </li>
-                <li>
-                  <a
-                    class="link social-link"
-                    href=""
-                    aria-label="ссылка на IN"
-                    
-                    >IN</a
-                  >
+                <li class="item-social">
+                  <a class="link social-link" href="" aria-label="ссылка на IN"><svg class="icon-social">
+                      <use href="./image/sprite.svg#linkedin"></use>
+                    </svg></a>
                 </li>
                 
               </ul>
@@ -386,33 +341,39 @@
           <ul class="flex-container partner">
             <li class="item">
               <a class="link" href=""
-                ><img src="./image/logo-1.svg" alt="ya and co"
-              /></a>
+                ><svg class="icon-partner">
+                  <use href="./image/sprite.svg#logo-1"></use>
+                </svg></a>
+            </li>
+            <li class="item">
+              <a class="link" href="">
+                <svg class="icon-partner">
+                  <use href="./image/sprite.svg#logo-2"></use>
+                </svg></a>
             </li>
             <li class="item">
               <a class="link" href=""
-                ><img src="./image/logo-2.svg" alt="company tagline here"
-              /></a>
+                ><svg class="icon-partner">
+                  <use href="./image/sprite.svg#logo-3"></use>
+                </svg></a>
             </li>
             <li class="item">
               <a class="link" href=""
-                ><img src="./image/logo-3.svg" alt="company"
-              /></a>
+                ><svg class="icon-partner">
+                  <use href="./image/sprite.svg#logo-4"></use>
+                </svg></a>
             </li>
             <li class="item">
               <a class="link" href=""
-                ><img src="./image/logo-4.svg" alt="foster peters"
-              /></a>
+                ><svg class="icon-partner">
+                  <use href="./image/sprite.svg#logo-5"></use>
+                </svg></a>
             </li>
             <li class="item">
               <a class="link" href=""
-                ><img src="./image/logo-5.svg" alt="brand"
-              /></a>
-            </li>
-            <li class="item">
-              <a class="link" href=""
-                ><img src="./image/logo-6.svg" alt="company tag line"
-              /></a>
+                ><svg class="icon-partner">
+                  <use href="./image/sprite.svg#logo-6"></use>
+                </svg></a>
             </li>
           </ul>
         </div>
@@ -448,33 +409,38 @@
         <!-- Ссылки на соцсети -->
       <div class="footer-block">
         <h3>Присоединяйтесь</h3>
-        <ul class="list flex-container">
-          <li>
-            <a href="" aria-label="ссылка на Instagram" class="link footer-social-link"
-              >Instagram</a
-            >
+        <ul class="list flex-container social-icon">
+          <li class="item-social">
+            <a href="" class=" social-link-footer" aria-label="ссылка на Instagram">
+              <svg class="icon-social-footer">
+                <use href="./image/sprite.svg#instagram"></use>
+              </svg></a>
           </li>
-          <li>
-            <a href="" aria-label="ссылка на Twitter" class="link footer-social-link"
-              >Twitter</a
-            >
+          <li class="item-social">
+            <a class="link social-link-footer" href="" aria-label="ссылка на Twitter"><svg class="icon-social-footer">
+                <use href="./image/sprite.svg#twitter"></use>
+              </svg></a>
           </li>
-          <li>
-            <a href="" aria-label="ссылка на Facebook" class="link footer-social-link"
-              >Facebook</a
-            >
+          <li class="item-social">
+            <a class="link social-link-footer" href="" aria-label="ссылка на Facebook"><svg class="icon-social-footer">
+                <use href="./image/sprite.svg#facebook"></use>
+              </svg></a>
           </li>
-          <li>
-            <a href="" aria-label="ссылка на IN" class="link footer-social-link">IN</a>
+          <li class="item-social">
+            <a class="link social-link-footer" href="" aria-label="ссылка на IN"><svg class="icon-social-footer">
+                <use href="./image/sprite.svg#linkedin"></use>
+              </svg></a>
           </li>
         </ul>
         </div>
 
         <div class="footer-block">
           <h3>Подпишитесь на рассылку</h3>
-          <h3>
-            <button type="button" class="button-primary">Подписаться</button>
-          </h3>
+          
+            <button type="button" class="button-primary">Подписаться<svg class="icon-button">
+              <use href="./image/sprite.svg#icon-send"></use>
+            </svg></button>
+          
         </div>
       </div>
     </footer>

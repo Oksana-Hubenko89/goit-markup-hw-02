@@ -4,7 +4,7 @@
   --hero-fone: rgba(47, 48, 58, 0.8);
   --text-body-color: #757575;
   --text-social-links: #afb1b8;
-  --border-portfolio: #ececec;
+  --border-portfolio-line: #ececec;
   --logo-color-studio: #000000;
   --text-title-button-secondary: #212121;
   --button-secondary-icon-background: #f5f4fa;
@@ -12,6 +12,13 @@
   --background-footer: #2f303a;
   --text-adress-footer: rgba(255, 255, 255, 0.6);
   --text-after-footer: rgba(255, 255, 255, 0.4);
+  --fone-social-footer: rgba(255, 255, 255, 0.1);
+  --shadow-one: rgba(0, 0, 0, 0.2);
+  --shadow-two: rgba(0, 0, 0, 0.14);
+  --shadow-three: rgba(0, 0, 0, 0.12);
+  --shadow-four: rgba(0, 0, 0, 0.16);
+  --shadow-five: rgba(0, 0, 0, 0.06);
+  --border-portfolio: #eeeeee;
 }
 /*Общее проект*/
 html {
@@ -104,6 +111,29 @@ header {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+.contact {
+  display: inline-flex;
+  color: var(--text-body-color);
+}
+.contact:hover,
+.contact:focus {
+  color: var(--accent-color);
+}
+
+.icon-contact {
+  margin-right: 10px;
+  width: 16px;
+  fill: currentColor;
+}
+.icon-contact:hover {
+  fill: var(--accent-color);
+}
+.icon-contact-phone {
+  padding-right: 10px;
+  width: 20px;
+  fill: currentColor;
+}
+
 .header .container {
   display: flex;
   justify-content: space-between;
@@ -122,22 +152,28 @@ header {
 
 .nav {
   color: var(--text-title-button-secondary);
+  padding: -4px;
+}
+.item .nav,
+.item .nav {
+  border-bottom: solid 4px var(--primary-white-color);
 }
 
-.nav:hover,
-.nav:focus {
+.item .nav:hover,
+.item .nav:focus {
   color: var(--accent-color);
+  padding-top: 28px;
+  padding-bottom: 28px;
+  border-bottom: solid 4px var(--accent-color);
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
 }
-
+.buttom-header {
+  margin-left: auto;
+  margin-right: auto;
+}
 .head-main .item:not(:last-child) {
   margin-right: 50px;
-}
-.contact {
-  color: var(--text-body-color);
-}
-.contact:hover,
-.contact:focus {
-  color: var(--accent-color);
 }
 
 .auth-nav {
@@ -158,7 +194,14 @@ main {
 }
 /*Заголовки Студия*/
 /*Hero*/
-
+.hero-fone {
+  display: block;
+  text-align: center;
+}
+.hero-title button {
+  display: block;
+  justify-content: center;
+}
 .hero {
   display: flex;
   justify-content: center;
@@ -166,7 +209,7 @@ main {
   height: 600px;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(
+  background: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.8),
       rgba(47, 48, 58, 0.8)
@@ -174,10 +217,10 @@ main {
     url("../image/фон.jpg");
   background-repeat: no-repeat;
   background-position: center;
-
-  text-align: center;
-  margin: auto;
+  justify-content: center;
   align-items: center;
+
+  margin: auto;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -196,6 +239,10 @@ main {
   border-radius: 4px;
   overflow: hidden;
   margin-bottom: 30px;
+}
+.icon-start {
+  width: 70px;
+  height: 70px;
 }
 .icon-cart {
   height: 162px;
@@ -250,10 +297,14 @@ main {
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
   overflow: hidden;
+  box-shadow: 0px 2px 1px var(--shadow-one), 0px 1px 1px var(--shadow-two),
+    0px 1px 3px var(--shadow-three);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .name {
   font-weight: 500;
+  margin-bottom: 10px;
 }
 .name-color {
   color: var(--text-title-button-secondary);
@@ -263,23 +314,70 @@ main {
   color: var(--text-body-color);
   margin-bottom: 16px;
 }
+.icon-social {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
 .social-link {
-  color: var(--text-body-color);
+  padding: 0;
+  width: 44px;
+  height: 44px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-social-links);
+  background-color: var(--primary-white-color);
 }
 .social-link:hover,
 .social-link:focus {
-  color: var(--accent-color);
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+  border-radius: 50%;
 }
 .social-icon {
-  padding-left: 32px;
-  padding-right: 32px;
+  display: inline-flex;
+  justify-content: center;
+}
+.item-social {
+  display: block;
+  justify-content: center;
+  align-items: center;
 }
 /*Партнеры*/
 .partner {
   justify-content: center;
 }
+.icon-partner {
+  fill: var(--text-social-links);
+}
+.icon-partner:hover,
+.icon-partner:focus {
+  fill: var(--accent-color);
+}
+
+.link .icon-partner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+  padding: 20px;
+  border: solid 1px var(--text-social-links);
+  border-radius: 4px;
+}
+
+.link .icon-partner:hover,
+.link .icon-partner:focus {
+  border: solid 1px var(--accent-color);
+}
+
 .title-client {
   margin-bottom: 50px;
+}
+.social-icon > .item-social:not(:last-child) {
+  margin-right: 10px;
 }
 
 /*Общие заголовки Студия*/
@@ -328,22 +426,39 @@ main {
   margin: -15px;
 }
 .oll {
+  display: block;
   width: 370px;
+  height: 404px;
   margin: 15px;
+  border: 1px solid var(--border-portfolio);
+}
+.oll:hover,
+.oll:focus {
+  box-shadow: 1px 4px 6px var(--shadow-four), 0px 4px 4px var(--shadow-five),
+    0px 1px 1px var(--shadow-three);
 }
 .section-portfolio {
-  border-top: 1px solid var(--border-portfolio);
+  border-top: 1px solid var(--border-portfolio-line);
   background-color: var(--primary-white-color);
+}
+.card-portfilio {
+  display: block;
+  padding: 20px 24px;
 }
 .text-card {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.56;
-
+  padding: 63px 24px;
   color: var(--primary-white-color);
-  background: var(--background-text-card);
+  background-color: var(--background-text-card);
 }
-
+.text-card {
+  display: none;
+}
+.text-card:hover::after {
+  display: block;
+}
 .filtr {
   justify-content: center;
   margin-bottom: 50px;
@@ -377,14 +492,21 @@ main {
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
-  padding: 10px 32px;
+
   width: 200px;
   height: 50px;
   border-radius: 4px;
   overflow: hidden;
   border: solid 1px var(--accent-color);
 }
-
+button {
+  padding: 0;
+  border: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 .button-secondary {
   font-family: inherit;
   font-style: normal;
@@ -405,6 +527,32 @@ main {
 }
 
 /*Footer*/
+.icon-social-footer {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+.social-link-footer {
+  height: 44px;
+  width: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary-white-color);
+  background-color: var(--fone-social-footer);
+  border-radius: 50%;
+}
+
+.social-link-footer:hover,
+.social-link-footer:focus {
+  background-color: var(--accent-color);
+  border-radius: 50%;
+}
+
+.icon-button {
+  width: 24px;
+}
 .page-footer.container {
   /*align-items: baseline;*/
   align-items: center;
@@ -427,7 +575,15 @@ address {
   justify-content: space-between;
   align-items: baseline;
 }
-
+.icon-button {
+  fill: var(--primary-white-color);
+}
+.icon-button {
+  margin-left: 10px;
+}
+.button-primary {
+  display: flex;
+}
 .contact-footer {
   color: var(--text-adress-footer);
   margin-top: 9px;
